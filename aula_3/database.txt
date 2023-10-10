@@ -1,1 +1,1 @@
-[{"nome":"produto 1"},{"nome":"produto2"},{"nome":"produto3"}]
+[{"nome":"produto1"},{"nome":"produto2"},{"nome":"produto3"}]

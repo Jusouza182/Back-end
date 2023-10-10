@@ -8,8 +8,8 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 $method = $_SERVER['REQUEST_METHOD']; // captura o método que chegou
 
 if ($method === 'GET') {
-    $text = file_get_contents('database.txt');
-    $data =  json_decode($text);
+    $text = file_get_contents('database.txt'); //pega o arquivo e devolve em string
+    $data =  json_decode($text); //pega a string e devolve em um array associativo
 
     echo json_encode(['products' => $data]);
 } else if ($method === "POST") {
