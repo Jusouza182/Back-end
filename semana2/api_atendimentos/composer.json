@@ -1,0 +1,15 @@
+{
+    "name": "api/atendimento",
+    "autoload": {
+        "psr-4": {
+            "Api\\Atendimento\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jusouza182",
+            "email": "juliana_s_souza@estudante.sesisenai.org.br"
+        }
+    ],
+    "require": {}
+}
