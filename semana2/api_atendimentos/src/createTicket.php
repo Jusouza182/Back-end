@@ -2,7 +2,7 @@
 
 require_once 'config.php';
 require_once 'utils.php';
-
+require_once 'email.php';
 
 $method = $_SERVER['REQUEST_METHOD']; // salva o método
 
@@ -30,6 +30,8 @@ if($type === 1){
 saveFileContent('fila.txt', $filaDeAtendimento); //salva os dados no arquivo txt
 
 http_response_code(201);
+sendEmail('email@gmail.com', $name, 'TICKET CRIADO'); // fila
 // echo json_encode( ['ficha'=> count($filaDeAtendimento) ])// o count equivale ao .lenght
-echo json_encode(['ficha' => 'Aguarde sua vez'] )
+echo json_encode(['ficha' => 'Aguarde sua vez'] );
+
 ?>

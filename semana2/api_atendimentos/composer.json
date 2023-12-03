@@ -1,8 +1,9 @@
 {
-    "name": "api/atendimento",
+    "name": "juliana/api",
+    "description": "api atendimentos",
     "autoload": {
         "psr-4": {
-            "Api\\Atendimento\\": "src/"
+            "Juliana\\Api\\": "src/"
         }
     },
     "authors": [
@@ -11,5 +12,7 @@
             "email": "juliana_s_souza@estudante.sesisenai.org.br"
         }
     ],
-    "require": {}
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
 }

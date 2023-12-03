@@ -50,4 +50,4 @@ if ($guiche === 1) {
 // fazer um push do item retirado do array fila 
 
 http_response_code(201);
-echo json_encode(["Usuario enviado para o guiche com sucesso!"]);
+echo json_encode([current($primeiroItem)]);
